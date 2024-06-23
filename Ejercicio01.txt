@@ -1,1 +1,27 @@
-ejercicio1
+//ejercicio01
+#include <iostream>
+using namespace std;
+int main(){
+    int op1,op2;
+    float r;
+    char op;
+    cout<<"Ingrese el numero 01: "; cin>>op1;
+    cout<<"Ingrese el numero 02: "; cin>>op2;
+    cout<<"Ingrese el operador: "; cin>>op;
+    switch (op){
+        case'+':
+        r=op1+op2;
+        break;
+        case'-':
+        r=op1-op2;
+        break;
+        case'*':
+        r=op1*op2;
+        break;
+        case'/':
+        r=op1/op2;
+        break;
+    }
+    cout<<"El valor de la operacion es: "<<r<<endl;
+    return 0;
+}
