@@ -1,1 +1,37 @@
-ejercicio01actualizado
+//ejercicio01actualizado
+#include <iostream>
+using namespace std;
+int main(){
+    int op1,op2;
+    float r;
+    char op;
+    cout<<"Ingrese el numero 01: "; cin>>op1;
+    cout<<"Ingrese el numero 02: "; cin>>op2;
+    cout<<"Ingrese el operador: "; cin>>op;
+    switch (op){
+        case'+':
+        r=op1+op2;
+        cout<<"El valor de la operacion es: "<<r<<endl;
+        break;
+        case'-':
+        r=op1-op2;
+        cout<<"El valor de la operacion es: "<<r<<endl;
+        break;
+        case'*':
+        r=op1*op2;
+        cout<<"El valor de la operacion es: "<<r<<endl;
+        break;
+        case'/':
+        if(op2!=0){
+            r=op1/op2;
+            cout<<"El valor de la operacion es: "<<r<<endl;
+        }else{
+            cout<<"No es posible realizar la operacion"<<endl;
+        }
+        break;
+        default:
+        cout<<"Ingrese un operador valido"<<endl;
+        break;
+    }
+    return 0;
+}
