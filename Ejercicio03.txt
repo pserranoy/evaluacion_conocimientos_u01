@@ -1,1 +1,33 @@
- 
+//ejercicio03
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    float sum;
+    float suma(float a);
+    cout<<"Ingrese la cantidad de sumandos: "; cin>>n;
+    sum=suma(n);
+    cout<<" La sumatoria de la operacion es: "<<sum<<endl;
+    return 0;
+}
+float suma(float a){
+    float S,i;
+    float factorial(float n);
+    i=1;
+    S=0;
+    while(i<=a){
+        S=S+((factorial(i))/(2*i));
+        i=i+1;
+    }
+    return(S);
+} 
+float factorial(float n){
+    int i,f;
+    i=1;
+    f=1;
+    while(i<=n){
+        f=f*i;
+        i=i+1;
+    }
+    return(f);
+}
